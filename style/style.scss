@@ -5,7 +5,7 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	// height: 100vh;
+	height: 90vh;
     font-family: 'Tangerine', cursive;
 }
 
@@ -30,15 +30,28 @@ body {
     
     p {
         font-family: 'Simonetta', cursive;
-        text-align: justify;
+        text-align: center;
         font-size: larger;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    // body {
-    //     overflow-y: visible;
-    // }
+    section {
+        #menu {
+            width: fit-content;
+            padding: 1em;
+            border: 1px solid cyan;
+            border-radius: 1em;
+            box-shadow: 2px 2px 5px 4px cyan;
+            background-color: white;  
+            font-family: 'Simonetta', cursive;
+            font-size: large;
+            font-weight: bold;
+            margin-top: 45vh;
+            margin-left: 35vw;
+        }
+    }
+
     .container {
         width: fit-content;
         margin-bottom: 1em;
@@ -49,10 +62,27 @@ body {
             text-align: center;
         }
 
-        img {
+        p {
+            font-size: small;
+        }
+
+        img:nth-child(1) {
             position: relative;
             width: 50%;
-            margin-left: 25%;
+            margin-left: 20%;
+        }
+
+        img:nth-child(2) {
+            width: 70%;
+        }
+    }
+
+    .awal {
+        ul {
+            li {
+                text-decoration: none;
+                display: block;
+            }
         }
     }
 }

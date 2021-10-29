@@ -5,6 +5,7 @@ body {
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
+  height: 90vh;
   font-family: 'Tangerine', cursive;
 }
 
@@ -42,11 +43,27 @@ body {
 
 .container p {
   font-family: 'Simonetta', cursive;
-  text-align: justify;
+  text-align: center;
   font-size: larger;
 }
 
 @media only screen and (max-width: 600px) {
+  section #menu {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1em;
+    border: 1px solid cyan;
+    border-radius: 1em;
+    -webkit-box-shadow: 2px 2px 5px 4px cyan;
+            box-shadow: 2px 2px 5px 4px cyan;
+    background-color: white;
+    font-family: 'Simonetta', cursive;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 45vh;
+    margin-left: 35vw;
+  }
   .container {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -59,10 +76,20 @@ body {
   .container h1 {
     text-align: center;
   }
-  .container img {
+  .container p {
+    font-size: small;
+  }
+  .container img:nth-child(1) {
     position: relative;
     width: 50%;
-    margin-left: 25%;
+    margin-left: 20%;
+  }
+  .container img:nth-child(2) {
+    width: 70%;
+  }
+  .awal ul li {
+    text-decoration: none;
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
