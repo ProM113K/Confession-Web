@@ -37,18 +37,26 @@ body {
 
 @media only screen and (max-width: 600px) {
     section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50%;
+
+        h1 {
+            text-align: center;
+        }
         #menu {
             width: fit-content;
-            padding: 1em;
+            padding: 0.8em;
             border: 1px solid cyan;
             border-radius: 1em;
             box-shadow: 2px 2px 5px 4px cyan;
             background-color: white;  
             font-family: 'Simonetta', cursive;
-            font-size: large;
+            font-size: medium;
             font-weight: bold;
-            margin-top: 40vh;
-            margin-left: 36vw;
+            align-self: center;
+            transition-duration: 2s;
+            transition-delay: 1s;
         }
     }
 
@@ -65,23 +73,22 @@ body {
         p {
             font-size: small;
         }
-
-        img:nth-child(1) {
-            position: relative;
-            width: 50%;
-            margin-left: 20%;
-        }
-
-        img:nth-child(2) {
-            width: 70%;
-        }
     }
 
     .awal {
+        hr {
+            border: 1px solid white;
+        }
         ul {
             li {
                 text-decoration: none;
                 display: block;
+
+                img {
+                    width: 40%;
+                    margin-left: 20%;
+                    margin-bottom: 1.5em;
+                }
             }
         }
     }
