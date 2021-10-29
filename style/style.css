@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Simonetta&display=swap");
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: 'Tangerine', cursive;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.container p {
+  font-family: 'Simonetta', cursive;
+  text-align: justify;
+  font-size: larger;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .container h1 {
+    font-size: larger;
+  }
+}
+/*# sourceMappingURL=style.css.map */
