@@ -48,13 +48,21 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+  }
   .container {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
   .container h1 {
-    font-size: larger;
+    text-align: center;
+  }
+  .container img {
+    position: relative;
+    width: 50%;
+    margin-left: 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */
