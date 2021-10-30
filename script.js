@@ -9,6 +9,7 @@ lovePic.addEventListener("click", function () {
     lovePic.style.display = "none";
     document.getElementsByTagName("div")[1].removeAttribute("hidden");
     document.getElementById("main").appendChild(contAwal);
+    contAwal.setAttribute("hidden","hidden");
 });
 
 btnMenu.addEventListener("click", function() {
