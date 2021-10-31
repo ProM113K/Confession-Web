@@ -67,6 +67,9 @@ body {
     text-align: center;
     font-size: 2em;
   }
+  section p {
+    display: none;
+  }
   section #menu {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -99,6 +102,7 @@ body {
   }
   .container h1 {
     text-align: center;
+    margin-bottom: 1.5em;
   }
   .container p {
     font-size: medium;
