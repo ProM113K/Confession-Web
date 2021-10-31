@@ -1,31 +1,51 @@
-let lovePic = document.getElementById('love');
-let treePic = document.getElementById('tree');
-let contKedua = document.querySelector(".kedua");
-let btnMenu = document.getElementById("menu");
-let main = document.getElementById("main");
-let contPertama = document.querySelector(".pertama");
-let contAwal = document.querySelector(".awal");
+const lovePic = document.getElementById('love');
+const treePic = document.getElementById('tree');
+const contKedua = document.querySelector(".kedua");
+const btnMenu = document.getElementById("menu");
+const main = document.getElementById("main");
+const contPertama = document.querySelector(".pertama");
+const contAwal = document.querySelector(".awal");
+const backButton = document.getElementById("back");
+// const test = document.getElementById("test");
 
 window.addEventListener("load", (event) => {
     document.getElementsByTagName("audio")[0].play();
 });
 
+// test.addEventListener("click", () => {
+//     window.location.reload(true);
+// });
+
 lovePic.addEventListener("click", function () {
-    lovePic.style.display = "none";
-    document.getElementsByTagName("div")[1].removeAttribute("hidden");
+    lovePic.setAttribute("hidden", "hidden");
+    contPertama.removeAttribute("hidden");
     document.getElementById("main").appendChild(contAwal);
     contAwal.setAttribute("hidden", "hidden");
+    backButton.removeAttribute("hidden");
+    console.log("love");
+});
+
+backButton.addEventListener("click", () => {
+    lovePic.removeAttribute("hidden");
+    treePic.removeAttribute("hidden");
+    contKedua.setAttribute("hidden", "hidden");
+    contPertama.setAttribute("hidden", "hidden");
+    contAwal.removeAttribute("hidden");
+    backButton.setAttribute("hidden", "hidden");
+    console.log("back");
 });
 
 treePic.addEventListener("click", function () {
-    treePic.style.display = "none";
-    document.getElementsByTagName("div")[2].removeAttribute("hidden");
-    document.getElementById("main").appendChild(contKedua);
+    treePic.setAttribute("hidden", "hidden");
+    contKedua.removeAttribute("hidden");
+    // document.getElementById("main").appendChild(contKedua);
     contAwal.setAttribute("hidden", "hidden");
+    backButton.removeAttribute("hidden");
+    console.log("tree");
 });
 
 btnMenu.addEventListener("click", function () {
     btnMenu.setAttribute("hidden", "hidden");
-    document.getElementsByTagName("div")[0].removeAttribute("hidden");
+    contAwal.removeAttribute("hidden");
     document.getElementsByTagName("section")[0].remove();
-})
+});

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Simonetta&display=swap');
 
+// * {
+//     border: 1px solid black;
+// }
+
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -39,7 +43,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     body {
-        height: 100vw;
+        height: fit-content;
     }
 
     section {
@@ -102,5 +106,22 @@ body {
                 }
             }
         }
+    }
+
+    #back {
+        width: fit-content;
+        padding: 0.8em;
+        border: 1px solid cyan;
+        border-radius: 1em;
+        box-shadow: 2px 2px 5px 4px cyan;
+        background-color: white;
+        font-family: 'Simonetta', cursive;
+        font-size: medium;
+        font-weight: bold;
+        align-self: center;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        margin-left: 38%;
+        margin-bottom: 1em;
     }
 }
