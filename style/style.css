@@ -49,7 +49,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-    height: 100%;
+    height: 100vw;
   }
   section {
     display: -webkit-box;
@@ -101,17 +101,28 @@ body {
   .container p {
     font-size: medium;
   }
-  .awal hr {
-    border: 1px solid white;
+  .awal {
+    margin-top: 50%;
+  }
+  .awal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .awal ul li {
     text-decoration: none;
     display: block;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .awal ul li img {
     width: 40%;
-    margin-left: 20%;
-    margin-bottom: 1.5em;
+    margin-left: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,10 @@ let main = document.getElementById("main");
 let contPertama = document.querySelector(".pertama");
 let contAwal = document.querySelector(".awal");
 
+window.addEventListener("load", (event) => {
+    document.getElementsByTagName("audio")[0].play();
+});
+
 lovePic.addEventListener("click", function () {
     lovePic.style.display = "none";
     document.getElementsByTagName("div")[1].removeAttribute("hidden");
