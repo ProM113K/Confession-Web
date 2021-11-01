@@ -6,15 +6,10 @@ const main = document.getElementById("main");
 const contPertama = document.querySelector(".pertama");
 const contAwal = document.querySelector(".awal");
 const backButton = document.getElementById("back");
-// const test = document.getElementById("test");
 
 window.addEventListener("load", (event) => {
     document.getElementsByTagName("audio")[0].play();
 });
-
-// test.addEventListener("click", () => {
-//     window.location.reload(true);
-// });
 
 lovePic.addEventListener("click", function () {
     lovePic.setAttribute("hidden", "hidden");
@@ -38,7 +33,6 @@ backButton.addEventListener("click", () => {
 treePic.addEventListener("click", function () {
     treePic.setAttribute("hidden", "hidden");
     contKedua.removeAttribute("hidden");
-    // document.getElementById("main").appendChild(contKedua);
     contAwal.setAttribute("hidden", "hidden");
     backButton.removeAttribute("hidden");
     console.log("tree");

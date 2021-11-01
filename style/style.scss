@@ -9,7 +9,7 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 90vh;
+    height: fit-content;
     font-family: 'Tangerine', cursive;
 }
 
@@ -24,6 +24,57 @@ body {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+section {
+    display: flex;
+    background-image: url(../assets/images/pembuka.jpg);
+    background-position: center;
+    box-shadow: 0px 0px 5px 5px cyan;
+    margin-top: 18vh;
+    width: 80vw;
+    height: 70vh;
+    margin-left: 10%;
+    border-radius: 0 40px 0 40px;
+
+    p {
+        font-family: 'Simonetta', cursive;
+        float: left;
+        width: 30%;
+        margin-left: 5vw;
+        padding: 1.7em 1em 1em 1em;
+        font-size: larger;
+    }
+}
+
+.menu-wrap {
+    width: fit-content;
+    padding: 3rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/images/kotak.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+    h1 {
+        color: white;
+    }
+}
+
+#menu {
+    padding: 0.5em;
+    font-size: 1em;
+    font-family: 'Simonetta', cursive;
+    border-radius: 40px;
+    box-shadow: 7px 7px 5px grey;
+    border: none;
+    width: 15vw;
+
+    &:hover {
+        font-weight: bold;
     }
 }
 
@@ -47,9 +98,12 @@ body {
     }
 
     section {
-        display: flex;
-        flex-direction: column;
         margin-top: 50%;
+        display: block;
+        background-image: none;
+        box-shadow: none;
+        width: fit-content;
+        margin-left: 0;
 
         h1 {
             text-align: center;
@@ -58,6 +112,19 @@ body {
 
         p {
             display: none;
+        }
+
+        .menu-wrap {
+            display: flex;
+            flex-direction: column;
+            background-image: none;
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+
+            h1 {
+                color: black;
+            }
         }
 
         #menu {
@@ -71,8 +138,6 @@ body {
             font-size: medium;
             font-weight: bold;
             align-self: center;
-            transition-duration: 2s;
-            transition-delay: 1s;
         }
     }
 
@@ -107,7 +172,6 @@ body {
                 img {
                     width: 40%;
                     margin-left: 15%;
-                    // margin-bottom: 1.5em;
                 }
             }
         }
