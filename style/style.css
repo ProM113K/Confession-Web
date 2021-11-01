@@ -103,12 +103,68 @@ section p {
   width: 600px;
   margin: 0 auto;
   padding: 1em;
+  background-color: rgba(0, 174, 255, 0.219);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .container p {
   font-family: 'Simonetta', cursive;
   text-align: center;
   font-size: larger;
+}
+
+.awal {
+  margin-top: 10%;
+}
+
+.awal h1 {
+  text-align: center;
+}
+
+.awal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.awal ul li {
+  text-decoration: none;
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.awal ul li img {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 2em;
+}
+
+#back {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8em;
+  border: 1px solid cyan;
+  border-radius: 1em;
+  -webkit-box-shadow: 2px 2px 5px 4px cyan;
+          box-shadow: 2px 2px 5px 4px cyan;
+  background-color: white;
+  font-family: 'Simonetta', cursive;
+  font-size: medium;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1em;
+  margin-left: 46%;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -209,6 +265,7 @@ section p {
   .awal ul li img {
     width: 40%;
     margin-left: 15%;
+    margin-top: auto;
   }
   #back {
     width: -webkit-fit-content;
@@ -226,10 +283,7 @@ section p {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    -webkit-transition-duration: 2s;
-            transition-duration: 2s;
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    margin-top: auto;
     margin-left: 38%;
     margin-bottom: 1em;
   }
